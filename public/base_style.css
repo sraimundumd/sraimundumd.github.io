@@ -6,21 +6,15 @@ body {
   color: #444;
   padding: 0 10px;
 }
-
 h1,
 h2,
 h3 {
   line-height: 1.2;
 }
-
 a {
-  color: rgb(53 91 202);
+color: rgb(53 91 202);
 }
 
 a:visited{
-  color:rgb(133 101 255);
-}
-
-img {
-  max-width: 100%;
+    color:rgb(133 101 255);
 }

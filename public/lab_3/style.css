@@ -14,19 +14,21 @@ body {
   width: 70%;
   min-width: 800px;
   margin: 0 auto;
-  background-color: #6091C3;
+  background-color: #006EFF;
 }
 
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Kufam', cursive;
   color: #2a2a2a;
+  font-weight: 800;
 }
 
 p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Kufam', cursive;
   color: #2a2a2a;
+  font-weight: 400;
 }
 
 h1 {
