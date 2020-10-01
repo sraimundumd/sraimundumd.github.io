@@ -1,10 +1,11 @@
 body {
-    background-color:#F59E5C;
+    background-color:#3DE068;
 }
 
 .header {
+    background-color: #064717;
     font: normal 18px/1.5 "Times New Roman", "Times", serif;
-    color: rgb(0, 0, 0);
+    color: #3DE068;
     margin-bottom: 15px;
     padding: 15px;
     display: flex;
@@ -47,7 +48,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
     .one {
-        background-color: #E05358;
+        background-color: #19943A;
         margin-right: 15px;
         flex: 0 1 auto;
         }
@@ -55,14 +56,14 @@ body {
 
 @media only screen and (max-width: 1000px) {
     .one {
-        background-color:#E05358;
+        background-color:#19943A;
         margin-right: 0px;
         flex: 1 0 auto;
         }
 }
 
 .two {
-    background-color:#E05358;
+    background-color:#19943A;
 }
 
 @media only screen and (min-width: 1000px) {
