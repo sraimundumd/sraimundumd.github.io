@@ -1,31 +1,51 @@
 body {
-    background: ;
+    background-color:#F59E5C;
     font: ;
     color: ;
 }
 
 .header {
-    background: ;
-    font: ;
-    color: ;
+    font-family: 'Bangers', cursive;
+    color: #0000;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .wrapper {
 
 }
 
+.image{
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+}
 .container {
     max-width: ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center; 
 }
 
 .one {
-
+margin-right: 15px;
+flex: 0 1 auto;
 }
 
 .two {
 
 }
 
+.wrapper .container > div{
+flex: 0 1 auto;
+margin-right: 15px;
+}
 .ol_titles {
     font: ;
 }
