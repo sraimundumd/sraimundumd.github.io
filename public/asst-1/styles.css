@@ -4,7 +4,7 @@ body {
 
 .header {
     font: normal 18px/1.5 "Times New Roman", "Times", serif;
-    color: #0000;
+    color: rgb(0, 0, 0);
     margin-bottom: 15px;
     padding: 15px;
     display: flex;
