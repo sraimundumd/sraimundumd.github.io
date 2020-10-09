@@ -24,7 +24,6 @@ body {
     list-style-type: none;
     padding: 0px 16px;
   }
-  
   .flex-outer {
     margin-left: 0 auto;
     max-width: 800px;
@@ -90,3 +89,4 @@ body {
     background-color: #4CAF50;
     color: white;
   }
+
