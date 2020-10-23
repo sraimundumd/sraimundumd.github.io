@@ -1,7 +1,5 @@
 // You may wish to find an effective randomizer function on MDN.
 
-//const { urlencoded } = require("express");
-
 function range(int) {
   const arr = [];
   for (let i = 0; i < int; i += 1) {
@@ -31,8 +29,8 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      if(document.querySelector('.flex-inner')) {
-          document.querySelector('.flex-inner').remove();
+      if (document.querySelector('.flex-inner')) {
+        document.querySelector('.flex-inner').remove();
       }
       const new_array = range(10);
       const country_arr = new_array.map(() => {
@@ -52,6 +50,6 @@ document.body.addEventListener('submit', async (e) => {
         $(li).append(`<label for=$(el.code)>$(el.name)</label>`);
         $(ul).append(li);
       });
-  })
-   .catch((err) => console.log(err));
+    })
+    .catch((err) => console.log(err));
 });
