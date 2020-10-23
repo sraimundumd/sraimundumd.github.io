@@ -10,10 +10,10 @@ function range(int) {
   return arr;
 }
 
-function sortFunction(a, b, key) {
-  if (a[key] < b[key]) {
+function sortByKey(first, compare, key) {
+  if (first[key] < compare[key]) {
     return -1;
-  } if (a[key] > b[key]) {
+  } if (first[key] > compare[key]) {
     return 1;
   }
   return 0;
@@ -36,21 +36,22 @@ document.body.addEventListener('submit', async (e) => {
       }
       const new_array = range(10);
       const country_arr = new_array.map(() => {
-        const num = getRandomIntInclusive(0,243);
-        return fromServer[num];
+        const numb = getRandomIntInclusive(0, 243);
+        return fromServer[numb];
       });
 
-      const back_arr = country_arr.sort((a, b) => sortByKey(a, b, 'name'));
-      const unordered = document.createElement('ul');
-      unordered.className = 'flex-inner';
+      const back_arr = country_arr.sort((a, b) => sortByKey(first, compare, 'name'));
+      const ul = document.createElement('ul');
+      ul.className = 'flex-inner';
       $('form').prepend(ul);
-      console.log('fromServer', fromServer);
+      //console.log('fromServer', fromServer);
 
-      back_arr.forEach((el,i) => {
+      back_arr.forEach((el, i) => {
         const li = document.createElement('li');
-        $(li).append(`input type="checkbox" value=$(el.code) id=$(el.code) />`);
-        $(li).append(`label for=$(el.code)>$(el.name)</label>`);
-        $(li).append(li);
-    });
-    .catch((err) => console.log(err));
+        $(li).append(`<input type="checkbox" value=$(el.code) id=$(el.code) />`);
+        $(li).append(`<label for=$(el.code)>$(el.name)</label>`);
+        $(ul).append(li);
+      });
+  })
+   .catch((err) => console.log(err));
 });
