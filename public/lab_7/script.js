@@ -26,19 +26,13 @@ function convertRestaurantsToCategories(restaurantList) {
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
-  CanvasJS.addColorSet('customColorSet1', [
-    '#2F4F4F',
-    '#008080',
-    '#2E8B57',
-    '#3CB371',
-    '#90EE90'
-  ]);
+ 
 
   return {
     animationEnabled: true,
     colorSet: 'customColorSet1',
     title: {
-      text: 'Places to Eat Out In Future'
+      text: 'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
@@ -86,7 +80,13 @@ function runThisWithResultsFromServer(jsonFromServer) {
   const chart = new CanvasJS.Chart('chartContainer', options);
   chart.render();
 }
-
+CanvasJS.addColorSet('customColorSet1', [
+  '#2F4F4F',
+  '#008080',
+  '#2E8B57',
+  '#3CB371',
+  '#90EE90'
+]);
 // Leave lines 52-67 alone; do your work in the functions above
 document.body.addEventListener('submit', async (e) => {
   e.preventDefault(); // this stops whatever the browser wanted to do itself.
