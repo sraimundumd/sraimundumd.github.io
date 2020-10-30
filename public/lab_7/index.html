@@ -15,9 +15,31 @@
   <head>
     <meta charset="utf-8">
     <title>Steven Raimundo's Lab 7</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
+  <body>
+    <div class="wrapper">
+      <div class="container flex-outer">
+        <div class="header">
+          <h1>Steven Raimundo Lab 7</h1>
+        </div>
+        <div id="chartContainer"></div>
+        <form>
+          <button class="button" id="submit_button" name="submit_button" type="submit">Where Should We Eat</button>
+        </form>
+      </div>
+    </div>
+    <script src="canvasjs.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
