@@ -1,13 +1,27 @@
+
 function convertRestaurantsToCategories(restaurantList) {
   // process your restaurants here!
   const restarray = [];
   const final = {};
 
-  //for loop to iterate through the data 
-  for(let i = 0, i < restaurantList.length; i += 1){
-
+  // for loop to iterate through the data 
+  for (let i = 0; i < restaurantList.length; i += 1) {
+    restarray.push(restaurantList[i].category);
   }
-  return list;
+  for (let i = 0; i < restarray.length; i += 1) {
+    if (!final[restarray[i]]) {
+      final[restarray[i]] = 0;
+    }
+    final[restarray[i]] += 1;
+  }
+
+  const listt = Object.keys(final).map((category) => ({
+    y: final[category],
+    label: category
+  }));
+
+  console.log('listt', listt);
+  return listt;
 }
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
